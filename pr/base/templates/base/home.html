@@ -8,8 +8,13 @@
     <h2>Rooms</h2>
     <ul>
         {% for room in rooms %}
-            <li><a href="{% url 'room' room.id %}">{{ room.name }}</a></li>
+            <li>
+                <a href="{% url 'room' room.id %}">{{ room.name }} (@{{room.host.username}})</a>
+                <a href="{% url 'update_room' room.id %}">Edit</a>
+                <a href="{% url 'delete_room' room.id %}">Delete</a>
+            </li>
         {% endfor %}
+        <li><a href="{% url 'create_room' %}">Create a room</a></li>
     </ul>
 </div>
 
