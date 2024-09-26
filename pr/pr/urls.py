@@ -32,6 +32,7 @@ from base import views as base_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('base.urls')),
+    path('api/', include('base.api.urls')),
     #path('', home),
     #path('room/', room),
     #path('redis/', views.redis_demo, name='redis_demo'),
