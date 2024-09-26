@@ -2,11 +2,11 @@
 
 {% block content %} 
 
--{{page}}-
+
 {% if page == 'login' %}
 
 <div>
-  <form method="POST" action="{% url 'login_page' %}">
+  <form method="POST" action="{% url 'login' %}">
     {% csrf_token %}
 
     <label>Username:</label>
@@ -37,7 +37,7 @@
     <input type="submit" value="Register" />
   </form>
   <p>Already signed up yet?</p>
-  <a href="{% url 'login_page' %}">Sign in</a>
+  <a href="{% url 'login' %}">Sign in</a>
 </div>
 {% endif %} 
 
