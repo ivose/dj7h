@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     "corsheaders",
 ]
 
+AUTH_USER_MODEL = 'base.User'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -150,6 +152,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/images/'
 # Add these new lines
 #STATICFILES_DIRS = (
 #    os.path.join(BASE_DIR, 'static'),
@@ -157,6 +160,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+MEDIA_ROOT = BASE_DIR / "static/images"
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
