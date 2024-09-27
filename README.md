@@ -1,6 +1,8 @@
 
 # Project Setup Instructions
 
+This small project is made by watching a video [video](https://www.youtube.com/watch?v=PtQiiknWUcI&t=24724s).
+
 ## Recommended Setup
 
 It is recommended to use a Linux operating system, or if you're on Windows, use WSL (Windows Subsystem for Linux) with an Ubuntu installation. 
